@@ -11,6 +11,15 @@
 * If parent already has a left-child,
 * the new node takes its place, and
 * the old left-child becomes the left-child of the new node.
+*
+* Explanation:
+* - This function inserts a new node as the left-child of a given parent node.
+* - It first checks if the parent node is not NULL.
+* - Then, it allocates memory for the new node and
+*			initializes it with the provided value.
+* - If the parent already has a left child, the new node takes its place,
+*			and the old left-child becomes the left-child of the new node.
+* - Finally, it returns a pointer to the new node.
 */
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
