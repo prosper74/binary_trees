@@ -85,4 +85,7 @@ int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
 void binary_tree_print(const binary_tree_t *);
 
+int binary_tree_is_bst(const binary_tree_t *tree);
+int binary_tree_height(const binary_tree_t *tree);
+
 #endif
