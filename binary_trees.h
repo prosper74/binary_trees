@@ -29,15 +29,15 @@ typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
 
 /**
-* struct loader_queue_s - struct for ordering traversal queue by level.
+* struct level_order_queue_s - struct for ordering traversal queue by level.
 * @node: A node in the binary tree.
 * @next: The next node to traverse to in the binary tree.
 */
-typedef struct loader_queue_s
+typedef struct level_order_queue_s
 {
 binary_tree_t *node;
-struct loader_queue_s *next;
-} levelorder_queue_t;
+struct level_order_queue_s *next;
+} level_order_queue_t;
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
